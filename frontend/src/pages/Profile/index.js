@@ -24,6 +24,7 @@ export const CaseContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 30px;
+  background-color: #f0f0f5;
 `;
 
 export default function Profile() {
