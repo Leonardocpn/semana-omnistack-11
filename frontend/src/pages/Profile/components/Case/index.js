@@ -1,20 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Typography, Paper, IconButton } from "@material-ui/core";
+import { Typography, IconButton } from "@material-ui/core";
 import Delete from "@material-ui/icons/Delete";
-import styled from "styled-components";
-import api from "../../../services/api";
-
-export const CaseContainer = styled(Paper)`
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-`;
-
-export const TextFormat = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-`;
+import { CaseContainer, TextFormat } from "./styles";
+import api from "../../../../services/api";
 
 export default function Case() {
   const [incidents, setIncidents] = useState([]);

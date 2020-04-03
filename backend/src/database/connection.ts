@@ -1,3 +1,6 @@
 import Knex from "knex";
-import * as database from "../../knexfile";
-export const connection = Knex(database);
+import database from "../../knexfile";
+import { testeDb } from "../../knexfile";
+
+const config = process.env.NODE_ENV === "test" ? testeDb : database;
+export const connection = Knex(config);

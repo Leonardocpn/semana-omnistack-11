@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
 import { connection } from "../database/connection";
-import crypto from "crypto";
+import generateUniqueId from "../utils/generateUniqueId";
 
 export const createOng = async (req: Request, res: Response) => {
   const { name, email, whatsapp, city, uf } = req.body;
-  const id = crypto.randomBytes(4).toString("HEX");
+  const id = generateUniqueId();
 
   await connection("ongs").insert({
     id,
