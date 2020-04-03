@@ -4,7 +4,7 @@ import heroesImg from "../../assets/heroes.png";
 import { Typography, TextField, Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 import api from "../../services/api";
-import { LoginContainer, Sectiontyled, FormStyled } from "./styles";
+import { LoginContainer, Sectiontyled, FormStyled, ImgStyled } from "./styles";
 
 export default function Login() {
   const [id, setId] = useState("");
@@ -50,7 +50,8 @@ export default function Login() {
           </Button>
         </FormStyled>
       </Sectiontyled>
-      <img src={heroesImg} alt="Heroes" />
+
+      <ImgStyled src={heroesImg} alt="Heroes" />
     </LoginContainer>
   );
 }

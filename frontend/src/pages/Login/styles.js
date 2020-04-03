@@ -14,6 +14,10 @@ export const LoginContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 export const Sectiontyled = styled(Paper)`
@@ -35,4 +39,10 @@ export const FormStyled = styled.form`
   margin-bottom: 20px;
   width: 100%;
   max-width: 350px;
+`;
+
+export const ImgStyled = styled.img`
+  @media (max-width: 1080px) {
+    width: 60%;
+  }
 `;
