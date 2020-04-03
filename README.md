@@ -1,4 +1,3 @@
-[
 ![](https://img.shields.io/github/last-commit/Leonardocpn/semana-omnistack-11.svg?color=red)
 ![](https://img.shields.io/github/languages/top/Leonardocpn/semana-omnistack-11.svg?color=yellow)
 ![](https://img.shields.io/github/languages/count/Leonardocpn/semana-omnistack-11.svg?color=lightgrey)
@@ -10,9 +9,10 @@
 # Semana Omnistack 11
 
 Minha implementação da Semana Omnistack 11, com algumas alterações do projeto original.
-Frontend em React
-Backend emk Typescript com uso do SQLite como banco
-Mobile em React Native com o uso do Expo
+
+- Frontend em React
+- Backend em Typescript com uso do SQLite como banco
+- Mobile em React Native com o uso do Expo
 
 ## Bibliotecas
 
